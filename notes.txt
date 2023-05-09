@@ -1,0 +1,36 @@
+###Requisição HTTP###
+
+URL: https://pokeapi.co/api/v2/pokemon?type=grass&name=i
+
+ https://pokeapi.co = SERVIDOR
+ /api/v2/pokemon?type=grass&name=i = ${Endereço}/${path = caminho de identificação do recurso}
+        
+
+Requested method: GET = BUSCAR | POST = inserir | PUT =  | DELETE 
+
+URL: https://pokeapi.co/api/v2/pokemon?offset=20&limit=20
+ ~                                           ^
+ ~                                           |
+QUERY STRINGS -------------------------------|                       
+    offset = 20
+    & = concatenação
+    limit = 20
+obs: query string inicia-se após o '?' mas não é obrigatório, sendo que ela sempre será uma estrutura de chave e valor.
+Acima temos duas formas inciais de passagem de parametro para API, uma é no proprío path e a outra na query string.
+
+Request header 
+    content-type: application/json
+
+Request body 
+{
+    "name": "teste"
+}
+
+STATUS CODE: 200 OK
+
+Response header 
+
+Response body 
+
+
+
